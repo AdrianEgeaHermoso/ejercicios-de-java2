@@ -12,12 +12,12 @@ public class Tema03Ejercicio03 {
     
     System.out.print("Por favor, introduce la cantidad en pesetas: ");
     linea = System.console().readLine();
-    double pesetas = Double.parseDouble(linea);
+    int pesetas = Integer.parseInt(linea);
     
     double euros = 166.3860;
     
     double conversion = pesetas / euros;
 
-    System.out.print("Estas son los euros que tienes: " + conversion + " euros");   
+    System.out.printf("%d pesetas son %.2f euros", pesetas, conversion);   
   } 
 }

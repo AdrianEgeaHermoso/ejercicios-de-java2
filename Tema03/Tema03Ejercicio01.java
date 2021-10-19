@@ -10,11 +10,11 @@ public class Tema03Ejercicio01 {
 
     System.out.println("Programa para realizar una multiplicación: ");
     
-    System.out.print("Por favor, introduce el primer número: ");
+    System.out.print("Por favor, introduce el primer número entero: ");
     linea = System.console().readLine();
     int primerNumero = Integer.parseInt(linea);
     
-    System.out.print("introduce el segundo número, por favor: ");
+    System.out.print("introduce el segundo número entero, por favor: ");
     linea = System.console().readLine();
     int segundoNumero = Integer.parseInt(linea);
     

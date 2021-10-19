@@ -16,7 +16,7 @@ public class Tema03Ejercicio02 {
     
     double pesetas = 166.3860;
     
-    double conversion = euros * pesetas;
+    int conversion = (int)(euros * pesetas);
 
     System.out.print("Estas son las pesetas que tienes: " + conversion + " pesetas");   
   } 
