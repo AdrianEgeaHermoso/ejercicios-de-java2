@@ -19,7 +19,7 @@ public class Tema03Ejercicio04 {
     int segundoNumero = Integer.parseInt(linea);
     
     int multiplicacion = primerNumero * segundoNumero;
-    int division = primerNumero / segundoNumero;
+    double division = (double)primerNumero / (double)segundoNumero;
     int suma = primerNumero + segundoNumero;
     int resta = primerNumero - segundoNumero;
 

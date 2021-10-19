@@ -10,11 +10,11 @@ public class Tema03Ejercicio05 {
 
     System.out.println("Programa que calcule el área de un rectángulo: ");
     
-    System.out.print("Por favor, introduce la base del rectángulo: ");
+    System.out.print("Por favor, introduce la base del rectángulo en cms: ");
     linea = System.console().readLine();
     double base = Double.parseDouble(linea);
     
-    System.out.print("introduce la altura del rectángulo, por favor: ");
+    System.out.print("introduce la altura del rectángulo en cms, por favor: ");
     linea = System.console().readLine();
     double altura = Double.parseDouble(linea);
     
