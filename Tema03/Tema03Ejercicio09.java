@@ -23,6 +23,6 @@ public class Tema03Ejercicio09 {
     
     
 
-    System.out.printf("El volumen del cono es %.2f cms: ", volumen);   
+    System.out.printf("El volumen del cono es %.2f cms cúbicos: ", volumen);   
   } 
 }
