@@ -18,6 +18,6 @@ public class Tema03Ejercicio07 {
     
     
 
-    System.out.printf("El total de la factura es %.2f : ", totalFactura);   
+    System.out.printf("El total de la factura es %.2f euros: ", totalFactura);   
   } 
 }
