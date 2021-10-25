@@ -22,7 +22,7 @@ public class Tema04Ejercicio10 {
         break;
       case "febrero":
         if(dia <= 18 && dia >= 1){System.out.print("Eres Acuario");
-          }else if (dia > 31 || dia <= 0){System.out.print("Número del mes incorrecto");
+          }else if (dia > 28 || dia <= 0){System.out.print("Número del mes incorrecto");
             }else {System.out.print("Eres Piscis");}
         break;
       case "marzo":
@@ -32,7 +32,7 @@ public class Tema04Ejercicio10 {
         break;
       case "abril":
         if(dia <= 19 && dia >= 1){System.out.print("Eres Aries");
-          }else if (dia > 31 || dia <= 0){System.out.print("Número del mes incorrecto");
+          }else if (dia > 30 || dia <= 0){System.out.print("Número del mes incorrecto");
             }else {System.out.print("Eres Tauro");}
         break;
       case "mayo":
@@ -42,7 +42,7 @@ public class Tema04Ejercicio10 {
         break;
       case "junio":
         if(dia <= 20 && dia >= 1){System.out.print("Eres Geminis");
-          }else if (dia > 31 || dia <= 0){System.out.print("Número del mes incorrecto");
+          }else if (dia > 30 || dia <= 0){System.out.print("Número del mes incorrecto");
             }else {System.out.print("Eres Cancer");}
         break;
       case "julio":
@@ -57,7 +57,7 @@ public class Tema04Ejercicio10 {
         break;
       case "septiembre":
         if(dia <= 22 && dia >= 1){System.out.print("Eres Virgo");
-          }else if (dia > 31 || dia <= 0){System.out.print("Número del mes incorrecto");
+          }else if (dia > 30 || dia <= 0){System.out.print("Número del mes incorrecto");
             }else {System.out.print("Eres Libra");}
         break;
       case "octubre":
@@ -67,7 +67,7 @@ public class Tema04Ejercicio10 {
         break;
       case "noviembre":
         if(dia <= 21 && dia >= 1){System.out.print("Eres Escorpio");
-          }else if (dia > 31 || dia <= 0){System.out.print("Número del mes incorrecto");
+          }else if (dia > 30 || dia <= 0){System.out.print("Número del mes incorrecto");
             }else {System.out.print("Eres Sagitario");}
         break;
       case "diciembre":

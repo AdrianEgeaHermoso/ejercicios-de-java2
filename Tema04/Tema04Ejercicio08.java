@@ -23,17 +23,17 @@ public class Tema04Ejercicio08 {
     
     if (notaMedia < 5){
       System.out.print("Su nota media es insuficiente");
-      }else if ((notaMedia >= 5) && (notaMedia < 6)){
-        System.out.print("Su nota media es suficiente");
-        }else if ((notaMedia >= 6) && (notaMedia < 7)){
-          System.out.print("Su nota media es bien");
-          }else if ((notaMedia >= 7) && (notaMedia < 9)){
-            System.out.print("Su nota media es notable");
-            }else if ((notaMedia >= 9) && (notaMedia <= 10)){
-              System.out.print("Su nota media es sobresaliente");
-              }else{
-                System.out.print("Datos introducidos incorrectos");// por si alguien introduce números disparatados
-                }
+    }else if ((notaMedia >= 5) && (notaMedia < 6)){
+      System.out.print("Su nota media es suficiente");
+    }else if ((notaMedia >= 6) && (notaMedia < 7)){
+      System.out.print("Su nota media es bien");
+    }else if ((notaMedia >= 7) && (notaMedia < 9)){
+      System.out.print("Su nota media es notable");
+    }else if ((notaMedia >= 9) && (notaMedia <= 10)){
+      System.out.print("Su nota media es sobresaliente");
+    }else{
+      System.out.print("Datos introducidos incorrectos");// por si alguien introduce números disparatados
+    }
 
   }
 }

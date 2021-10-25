@@ -10,11 +10,14 @@ public class Tema04Ejercicio06 {
     System.out.print("Por favor, introduzca la altura en metros: ");
     
     double altura = Double.parseDouble(System.console().readLine());
-    
+    if (altura <= 0){
+      System.out.println("Datos introducidos incorrectos");
+    }else{
     double gravedad = 9.81;
     double tiempo = Math.sqrt(2*altura/gravedad);
 
     System.out.printf("El objeto que dejemos caer, tardará %.2f segundos", tiempo);
+    }
 
   }
 }
