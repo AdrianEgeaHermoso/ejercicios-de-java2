@@ -18,7 +18,7 @@ public class Tema04Ejercicio02 {
     }else if ((horaDia >= 21) && (horaDia <= 24) || ((horaDia >= 0 ) && (horaDia <= 5))) {
       System.out.println("Buenas noches");
     }else {
-      System.out.println("Lo siento, la respuesta es incorrecta.");
+      System.out.println("Lo siento, datos introducidos incorrectos.");
     }
 
   }
