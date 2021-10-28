@@ -3,49 +3,32 @@
  *
  * @author Adrián Egea Hermoso
  */
-public class Tema04Ejercicio20 {
+public class Tema04Ejercicio21 {
   public static void main(String[] args) {  
      
-    System.out.println("Programa que diga si un número entero positivo introducido por teclado es capicúa. Se permiten números de hasta 5 cifras. ");   
-    System.out.print("Por favor, introduzca un número entero de cinco dígitos como máximo: ");
+    System.out.println("Programa pedirá las dos notas que ha sacado el alumno en los dos primeros controles. ");   
+    System.out.print("Por favor, introduzca la primera nota: ");
     
-    int n = Integer.parseInt(System.console().readLine());
+    double primeraNota = Double.parseDouble(System.console().readLine());
     
-    boolean capicua = false;
+    System.out.print("Por favor, introduzca la segunda nota: ");
     
+    double segundaNota = Double.parseDouble(System.console().readLine());
     
-    if (n < 10) {
-      capicua = true;
-      }
-      
-    if ((n >= 10) && (n < 100)) {
-      if ((n / 10) == (n % 10)){
-        capicua = true;
+    double notaMedia = (primeraNota + segundaNota) / 2;
+    
+    if ((notaMedia >= 5) && (notaMedia <= 10)) {
+      System.out.print("Has aprobado, tu nota media es un: " + notaMedia);
+    }
+    
+    if ((notaMedia < 5) && (notaMedia >= 0)){
+      System.out.print("¿ Cuál ha sido el resultado de la recuperación (apto/ no apto)?");
+      String recuperacion = System.console().readLine();
+      if (recuperacion.equals("apto")){
+        System.out.print("Tu nota es un 5");
+      }else{
+        System.out.print("Tu nota es un " + notaMedia);
         }
-      }
-      
-    if ((n >= 100) && (n < 1000)) {
-      if ((n / 100) == (n % 10)){
-        capicua = true;
-        }
-      }
-    
-    if ((n >= 1000) && (n < 10000)) {
-      if (((n / 1000) == (n % 10)) && ((( n / 100 ) % 10)== (( n / 10) % 10))){
-        capicua = true;
-        }
-      }
-      
-    if ((n >= 10000) && (n < 100000)) {
-      if (((n / 10000) == (n % 10) ) && ((((n / 1000) % 10)) == ((n / 10) % 10))){
-        capicua = true;
-        }
-      }
-      
-    if (capicua) {
-      System.out.println("El número introducido es capicúa.");
-    } else {
-      System.out.println("El número introducido no es capicúa.");
     }
     
   }
