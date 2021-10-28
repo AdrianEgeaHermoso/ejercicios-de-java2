@@ -28,22 +28,26 @@ public class Tema04Ejercicio22 {
         System.out.print("Faltan " + resultado + " minutos para el fin de semana");
         break;
       case "martes":
-        System.out.print("Programación");
+        resultado = 5220 - ((hora * 60) + minutos);
+        System.out.print("Faltan " + resultado + " minutos para el fin de semana");
         break;
       case "miercoles":
-        System.out.print("Sistemas Informáticos");
+        resultado = 3780 - ((hora * 60) + minutos);
+        System.out.print("Faltan " + resultado + " minutos para el fin de semana");
         break;
       case "jueves":
-        System.out.print("Programación");
+        resultado = 2340 - ((hora * 60) + minutos);
+        System.out.print("Faltan " + resultado + " minutos para el fin de semana");
         break;
       case "viernes":
-        System.out.print("Formación y Orientación Laboral");
+        resultado = 900 - ((hora * 60) + minutos);
+        System.out.print("Faltan " + resultado + " minutos para el fin de semana");
         break;
       case "sabado":
-        System.out.print("Descanso");
+        System.out.print("Ya es fin de semana");
         break;
       case "domingo":
-        System.out.print("Descanso");
+        System.out.print("Ya es fin de semana");
         break;
       default:
         System.out.print("no es correcto, escribe un dia de la semana de lunes a domingo en minúscula");
