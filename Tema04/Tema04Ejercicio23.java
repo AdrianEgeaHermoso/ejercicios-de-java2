@@ -22,7 +22,33 @@ public class Tema04Ejercicio23 {
     
     switch (codPromocion) {
       case "nopro":
-        System.out.println("Base Imponible " + base);
+        if (tipoIva.equals("general")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.21);
+          System.out.println("Iva (21%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          System.out.println("Cod Promo (nopro) " + "Sin descuento");
+          System.out.println("Total " + (base + precioIva) + " euros");
+        }
+        if (tipoIva.equals("reducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.10);
+          System.out.println("Iva (10%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          System.out.println("Cod Promo (nopro) " + "Sin descuento");
+          System.out.println("Total " + (base + precioIva) + " euros");
+        }
+        if (tipoIva.equals("superreducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.04);
+          System.out.println("Iva (4%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          System.out.println("Cod Promo (nopro) " + "Sin descuento");
+          System.out.println("Total " + (base + precioIva) + " euros");
+        }
         
         break;
       case "mitad":
@@ -33,17 +59,102 @@ public class Tema04Ejercicio23 {
           double precioConIva = base + precioIva;
           System.out.println("Precio con Iva " + precioConIva);
           double descuento = (precioConIva * 0.50);
-          System.out.println("Cod Promo (mitad) " + ((base + precioIva) - descuento));
+          System.out.println("Cod Promo (mitad) " + descuento);
           double resultado = precioConIva - descuento;
           System.out.println("Total " + resultado + " euros");
         }
-        
+        if (tipoIva.equals("reducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.10);
+          System.out.println("Iva (10%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.50);
+          System.out.println("Cod Promo (mitad) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
+        if (tipoIva.equals("superreducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.04);
+          System.out.println("Iva (4%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.50);
+          System.out.println("Cod Promo (mitad) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
         break;
       case "meno5":
-        
+        if (tipoIva.equals("general")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.21);
+          System.out.println("Iva (21%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = 5;
+          System.out.println("Cod Promo (meno5) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
+        if (tipoIva.equals("reducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.10);
+          System.out.println("Iva (10%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = 5;
+          System.out.println("Cod Promo (meno5) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
+        if (tipoIva.equals("superreducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.04);
+          System.out.println("Iva (4%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = 5;
+          System.out.println("Cod Promo (meno5) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
         break;
       case "5porc":
-        
+        if (tipoIva.equals("general")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.21);
+          System.out.println("Iva (21%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.05);
+          System.out.println("Cod Promo (5porc) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
+        if (tipoIva.equals("reducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.10);
+          System.out.println("Iva (10%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.05);
+          System.out.println("Cod Promo (5porc) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
+        if (tipoIva.equals("superreducido")) {
+          System.out.println("Base Imponible " + base);
+          double precioIva = (base * 0.04);
+          System.out.println("Iva (4%) " + precioIva);
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.05);
+          System.out.println("Cod Promo (5porc) " + descuento);
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
+        }
         break;
       default:
         System.out.print("datos introducidos incorrectos, introduzca correctamente los datos que se solicitan");
