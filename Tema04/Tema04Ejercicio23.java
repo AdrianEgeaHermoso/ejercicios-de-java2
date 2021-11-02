@@ -6,9 +6,12 @@
 public class Tema04Ejercicio23 {
   public static void main(String[] args) {  
      
-    System.out.println("Programa que calcule el precio final de un producto dando por teclado la base imponible, el tipo de iva y un código promocional");   
+    System.out.println("Programa que calcule el precio final de un producto dando por teclado la base imponible, el tipo de iva y un código promocional"); 
+    
+      
     System.out.print("Por favor, introduzca la base imponible: ");
     double base = Double.parseDouble(System.console().readLine());
+  
     
     System.out.print("Por favor, introduzca el tipo de iva (general, reducido, superreducido): ");
     String tipoIva = System.console().readLine().toLowerCase();
@@ -25,13 +28,14 @@ public class Tema04Ejercicio23 {
       case "mitad":
         if (tipoIva.equals("general")) {
           System.out.println("Base Imponible " + base);
-          double precioIva = (base / 0.21);
+          double precioIva = (base * 0.21);
           System.out.println("Iva (21%) " + precioIva);
-          System.out.println("Precio con Iva " + (base + precioIva));
-          double descuento = ((base + precioIva) / 0.50);
-          System.out.println("Cod Promo (mitad) " + (base + precioIva) - descuento);
-          double resultado = 
-          System.out.println("Total " + resultado + "euros");
+          double precioConIva = base + precioIva;
+          System.out.println("Precio con Iva " + precioConIva);
+          double descuento = (precioConIva * 0.50);
+          System.out.println("Cod Promo (mitad) " + ((base + precioIva) - descuento));
+          double resultado = precioConIva - descuento;
+          System.out.println("Total " + resultado + " euros");
         }
         
         break;

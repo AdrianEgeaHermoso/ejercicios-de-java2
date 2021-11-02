@@ -43,9 +43,9 @@ public class Tema04Ejercicio20 {
       }
       
     if (capicua) {
-      System.out.println("El número introducido es capicúa.");
+      System.out.println("El " + n + " es capicúa.");
     } else {
-      System.out.println("El número introducido no es capicúa.");
+      System.out.println("El " + n + " no es capicúa.");
     }
     
   }
