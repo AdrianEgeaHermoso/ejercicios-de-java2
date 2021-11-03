@@ -39,14 +39,71 @@ public class Tema04Ejercicio24 {
         }
         if (estadoCivil == 2) {
           double sueldoBase = 950;
+          System.out.println("Sueldo Base " + sueldoBase);
+          double dietas = (diasViaje * 30);
+          System.out.println("Dietas" + (diasViaje + "viajes ") + dietas);
+          double sueldoBruto = sueldoBase + dietas;
+          System.out.println("Sueldo Bruto " + sueldoBruto);
+          double retencion = (sueldoBruto * 0.20);
+          System.out.println("Retención IRPF " + retencion);
+          double sueldoNeto = (sueldoBruto - retencion);
+          System.out.println("Sueldo Neto " + sueldoNeto);
           
         }
         break;
       case 2:
-      double sueldoBase = 1200;
+        if (estadoCivil == 1) {
+          double sueldoBase = 1200;
+          System.out.println("Sueldo Base " + sueldoBase);
+          double dietas = (diasViaje * 30);
+          System.out.println("Dietas" + (diasViaje + "viajes ") + dietas);
+          double sueldoBruto = sueldoBase + dietas;
+          System.out.println("Sueldo Bruto " + sueldoBruto);
+          double retencion = (sueldoBruto * 0.25);
+          System.out.println("Retención IRPF " + retencion);
+          double sueldoNeto = (sueldoBruto - retencion);
+          System.out.println("Sueldo Neto " + sueldoNeto);
+        }
+        if (estadoCivil == 2) {
+          double sueldoBase = 1200;
+          System.out.println("Sueldo Base " + sueldoBase);
+          double dietas = (diasViaje * 30);
+          System.out.println("Dietas" + (diasViaje + "viajes ") + dietas);
+          double sueldoBruto = sueldoBase + dietas;
+          System.out.println("Sueldo Bruto " + sueldoBruto);
+          double retencion = (sueldoBruto * 0.20);
+          System.out.println("Retención IRPF " + retencion);
+          double sueldoNeto = (sueldoBruto - retencion);
+          System.out.println("Sueldo Neto " + sueldoNeto);
+          
+        }
         break;
       case 3:
-      //double sueldoBase = 1600;
+        if (estadoCivil == 1) {
+          double sueldoBase = 1600;
+          System.out.println("Sueldo Base " + sueldoBase);
+          double dietas = (diasViaje * 30);
+          System.out.println("Dietas" + (diasViaje + "viajes ") + dietas);
+          double sueldoBruto = sueldoBase + dietas;
+          System.out.println("Sueldo Bruto " + sueldoBruto);
+          double retencion = (sueldoBruto * 0.25);
+          System.out.println("Retención IRPF " + retencion);
+          double sueldoNeto = (sueldoBruto - retencion);
+          System.out.println("Sueldo Neto " + sueldoNeto);
+        }
+        if (estadoCivil == 2) {
+          double sueldoBase = 1600;
+          System.out.println("Sueldo Base " + sueldoBase);
+          double dietas = (diasViaje * 30);
+          System.out.println("Dietas" + (diasViaje + "viajes ") + dietas);
+          double sueldoBruto = sueldoBase + dietas;
+          System.out.println("Sueldo Bruto " + sueldoBruto);
+          double retencion = (sueldoBruto * 0.20);
+          System.out.println("Retención IRPF " + retencion);
+          double sueldoNeto = (sueldoBruto - retencion);
+          System.out.println("Sueldo Neto " + sueldoNeto);
+          
+        }
         break;
       default:
         System.out.print("datos introducidos incorrectos, introduzca correctamente los datos que se solicitan");
