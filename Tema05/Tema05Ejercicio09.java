@@ -13,9 +13,6 @@ public class Tema05Ejercicio09 {
     
     int cuentaDigitos = 0;
     
-    
-    
-    
     while(numeroIntroducido > 0){
       numeroIntroducido /= 10;
       cuentaDigitos ++;
