@@ -11,6 +11,9 @@ public class Tema05Ejercicio08 {
     
     int n = Integer.parseInt(System.console().readLine());
     
+    System.out.println("Tabla de multiplicar del " + n);
+    System.out.println("-------------------------");
+    
     for (int i = 0; i <= 10; i++) {
       System.out.println(n +  " x " + i + " = " + n * i);
     }
