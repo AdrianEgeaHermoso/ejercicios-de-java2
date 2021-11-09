@@ -9,11 +9,11 @@ public class Tema05Ejercicio03 {
     
     int i = 0;
     
-    System.out.println(0);
     
     do{
-      System.out.println(i += 5);
-    }while (i < 100);
+      System.out.println(i);
+      i += 5;
+    }while (i <= 100);
     
   }
 }
