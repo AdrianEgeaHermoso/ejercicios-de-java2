@@ -26,7 +26,7 @@ public class Tema05Ejercicio09 {
       //cuentaDigitos ++;
     //}while(numeroIntroducido > 10);
       
-    System.out.println(cuentaDigitos);
+    System.out.println("Ha introducido " + cuentaDigitos + " dígitos");
     
   }
 }

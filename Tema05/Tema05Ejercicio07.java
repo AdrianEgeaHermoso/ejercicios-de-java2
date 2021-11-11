@@ -9,16 +9,17 @@ public class Tema05Ejercicio07 {
     
     int numeroIntroducido = 0;
     int numeroIntentos = 4;
+    int codigo = 4444;
     
     do{
       System.out.println("Introduzca la combinación de 4 digitos para abrir la caja fuerte, tiene " + numeroIntentos + " intentos");
       numeroIntroducido = Integer.parseInt(System.console().readLine());
       numeroIntentos--;
-      }while((numeroIntroducido != 4444) && (numeroIntentos != 0));
+      }while((numeroIntroducido != codigo) && (numeroIntentos != 0));
     
-    if (numeroIntroducido == 4444){
+    if (numeroIntroducido == codigo){
       System.out.println("Has acertado la combinación");
-    }else{System.out.println("Has fallado los 4 intentos");
+    }else{System.out.println("Has fallado los 4 intentos, caja fuerte bloqueada");
     }
   }
 }
