@@ -21,6 +21,8 @@ public class Tema05Ejercicio13 {
     
     System.out.println("Ha introducido " + positivos + " numeros positivos y " + negativos + " negativos");
     
+    // Habia entendido que fuera diciendo números y fueran saliendo si es negativo ese numero o positivo al introducirlo, hasta 10 veces
+    
     //do{
       //System.out.println("Introduzca números para saber si es positivo o negativo: ");
       //n = Integer.parseInt(System.console().readLine());
