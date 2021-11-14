@@ -19,9 +19,9 @@ public class Tema05Ejercicio14 {
         
     
     
-      for (int i = 0; i < exponente; i++) {
-        potencia *= base;
-      }
+    for (int i = 0; i < exponente; i++) {
+      potencia *= base;
+    }
     
 
     System.out.println(base + "^" + exponente + " = " + potencia);
