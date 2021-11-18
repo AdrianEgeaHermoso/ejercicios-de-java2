@@ -3,34 +3,26 @@
  *
  * @author Adrián Egea Hermoso
  */
-public class Tema05Ejercicio13 {
+public class Tema05Ejercicio22 {
   public static void main(String[] args) {
-    System.out.println(" Escribe un programa que lea una lista de diez números y determine cuántos son positivos, y cuántos son negativos.: ");
+    System.out.println(" Muestra por pantalla todos los números primos entre 2 y 100, ambos incluidos. ");
     
-    int n = 0;
-    int positivos = 0;
-    int negativos = 0;
+
     
-    System.out.println("Introduce 10 numeros para saber si son positivos o negativos");
-    
-    for (int i = 0; i < 10; i++) {
-      n = Integer.parseInt(System.console().readLine());
-      if (n >= 0){positivos ++;
-      }else{negativos ++;};
+    for (int i = 2; i <= 100; i++) {
+      
+      boolean esPrimo = true;
+      
+      for (int n = 2; n < i; n++) {
+        if (i % n == 0) {
+          esPrimo = false;
         }
-    
-    System.out.println("Ha introducido " + positivos + " numeros positivos y " + negativos + " negativos");
-    
-    // Habia entendido que fuera diciendo números y fueran saliendo si es negativo ese numero o positivo al introducirlo, hasta 10 veces
-    
-    //do{
-      //System.out.println("Introduzca números para saber si es positivo o negativo: ");
-      //n = Integer.parseInt(System.console().readLine());
-      //if (n>= 0){
-        //System.out.println("Es positivo");
-      //}else{System.out.println("Es negativo");}
-      //numeros ++;
-    //}while(numeros <= 10);
+      }
+      if (esPrimo){
+        System.out.println(i);
+      }
+    }
+    System.out.println();
   
   }
 }
