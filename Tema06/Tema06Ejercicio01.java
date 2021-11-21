@@ -1,5 +1,5 @@
 /**
- * Generación de números aleatorios.
+ * 
  *
  *  @author Adrián Egea Hermoso
  */
