@@ -11,7 +11,7 @@ public class Tema06Ejercicio01 {
     int dados = 0;
 
     for (int i = 1; i <= 3; i++) {
-      dados = (int)(Math.random() * 7);
+      dados = (int)(Math.random() * 7) + 1;
       System.out.println(dados);
       suma += dados;
     }
