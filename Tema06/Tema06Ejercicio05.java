@@ -11,11 +11,13 @@ public class Tema06Ejercicio05 {
     int suma = 0;
     int maximo = 100;
     int minimo = 199;
+    int contador = 0;
 
     for (int i = 1; i <= 50; i++) {
       n = (int)(Math.random() * 100) + 100;
       System.out.print(n + "  ");
       suma += n;
+      contador ++;
       
       if (n < minimo){
         minimo = n;
@@ -26,7 +28,7 @@ public class Tema06Ejercicio05 {
       }
     }
     
-    System.out.println("\nLa media de los números es " + suma / 50);
+    System.out.println("\nLa media de los números es " + suma / contador);
     System.out.println("El número máximo es " + maximo);
     System.out.println("El número mínimo es " + minimo);
     
