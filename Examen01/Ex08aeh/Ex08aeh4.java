@@ -15,7 +15,7 @@ public class Ex08aeh4 {
     int vueltasSinBisiestos = ((400 - 97) * 365);
     System.out.println("Sin tener en cuenta los años bisiestos, en 400 años, La Tierra da " + vueltasSinBisiestos + " vueltas");
     System.out.println("Apartado b:");
-    int vueltasConBisiestos = (400 * (365 + 97));
+    int vueltasConBisiestos = ((400 * 365) + 97);
     System.out.println("Desde el año 1601 al 2000, La Tierra dió " + vueltasConBisiestos + " vueltas");
   }
 }

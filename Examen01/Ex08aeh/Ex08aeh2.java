@@ -9,9 +9,9 @@ public class Ex08aeh2 {
     int pulsaciones = Integer.parseInt(System.console().readLine());
     
     System.out.print("Por favor, introduzca el tiempo en años: ");
-    int años = Integer.parseInt(System.console().readLine());
+    int anos = Integer.parseInt(System.console().readLine());
     
-    int latidosTotales = ((((365 * 24) * 60) * años) * pulsaciones);
+    int latidosTotales = ((((365 * 24) * 60) * anos) * pulsaciones);
     
     System.out.print("En ese tiempo, su corazón habrá latido " + latidosTotales + " veces");
     
