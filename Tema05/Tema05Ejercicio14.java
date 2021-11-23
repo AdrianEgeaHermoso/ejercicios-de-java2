@@ -24,7 +24,7 @@ public class Tema05Ejercicio14 {
     }
     
 
-    System.out.println(base + "^" + exponente + " = " + potencia);
+    System.out.println(base + " elevado " + exponente + " = " + potencia);
     
     //do {
       //resultado = (base * base);
