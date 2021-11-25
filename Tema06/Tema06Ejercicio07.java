@@ -21,13 +21,13 @@ public class Tema06Ejercicio07 {
           signo = "1";
           break;
           case 2:
-          signo = "X";
+          signo = "  X";
           break;
           case 3:
-          signo = "2";
+          signo = "    2";
           default:
         }
-        System.out.println(signo);
+        System.out.println(signo + signo + signo);
       }
     }
     
