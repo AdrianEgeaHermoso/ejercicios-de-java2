@@ -11,7 +11,7 @@ public class Tema06Ejercicio06 {
     int intentos = 5;
     int numeros = 0;
     
-    numeros = (int)(Math.random() * 100) + 1;
+    numeros = (int)(Math.random() * 10) + 1;
     
     do{
       System.out.println("Introduzca el número: ");
@@ -20,15 +20,18 @@ public class Tema06Ejercicio06 {
       intentos --;
       
       
-      if (n == numeros){
+      if ((n == numeros) || ((intentos == 0) && (n == numeros))){
         System.out.println("Número correcto");
       }
       
-      if (n != numeros){
-        System.out.println("Número incorrecto, te quedan " + intentos + " intentos");
+      if (n > numeros){
+        System.out.println("El número correcto es menor, te quedan " + intentos + " intentos");
+      }
+      if (n < numeros){
+        System.out.println("El número correcto es mayor, te quedan " + intentos + " intentos");
       }
       
-      if (intentos == 0){
+      if ((intentos == 0) && (n != numeros)){
         System.out.println("No te quedan mas intentos, otra vez será");
       }
       
