@@ -73,7 +73,7 @@ public class Afortunado {
     
     
     
-    String[] colores = {"\033[33m","\033[33m","\033[33m","\033[33m","\033[33m","\033[33m",};
+    String[] colores = {"\033[33m","\033[32m","\033[31m","\033[34m","\033[35m","\033[36m",};
     
     String color = colores[(int)(Math.random() * colores.length)];
     
