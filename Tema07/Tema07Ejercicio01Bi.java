@@ -1,7 +1,7 @@
 /**
- * @author Luis José Sánchez
+ * @author Adrián Egea Hermoso
  *
- * Ejemplo de uso de arrays bidimensionales
+ * 
  */
 
 public class Tema07Ejercicio01Bi {
@@ -27,7 +27,7 @@ public class Tema07Ejercicio01Bi {
         System.out.print("Fila: " + fila);
     
         for(columna = 0; columna < 6; columna++) {
-          System.out.printf("%10d ", n[fila][columna]);
+          System.out.printf("%5d ", n[fila][columna]);
         }
         System.out.println();    
       }

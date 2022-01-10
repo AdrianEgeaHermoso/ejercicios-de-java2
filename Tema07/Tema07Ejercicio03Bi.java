@@ -4,10 +4,10 @@
  * 
  */
 
-public class Tema07Ejercicio02Bi {
+public class Tema07Ejercicio03Bi {
   public static void main(String[] args){
     
-    System.out.println("Escribe un programa que pida 20 números enteros. Estos números se deben introducir en un array de 4 filas por 5 columnas. El programa mostrará las sumas parciales de filas y columnas igual que si de una hoja de cálculo se tratara. La suma total debe aparecer en la esquina inferior derecha.");
+    System.out.println("Modifica el programa anterior de tal forma que los números que se introducen en el array se generen de forma aleatoria (valores entre 100 y 999).");
     
        
       int[][] n = new int[2][3];
@@ -19,14 +19,12 @@ public class Tema07Ejercicio02Bi {
       int sumaTotal;
       
       
-      System.out.println("Por favor, introduzca los números del array");
+      
       
       for(fila = 0; fila < 2; fila++) {
         
         for(columna = 0; columna < 3; columna++) {
-          
-          System.out.print("fila " + fila + " columna " + columna + " ");
-          n[fila][columna] = Integer.parseInt(System.console().readLine());
+          n[fila][columna] = (int)(Math.random() * 900) + 100;
           
         }
       }
