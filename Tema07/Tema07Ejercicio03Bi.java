@@ -10,7 +10,7 @@ public class Tema07Ejercicio03Bi {
     System.out.println("Modifica el programa anterior de tal forma que los números que se introducen en el array se generen de forma aleatoria (valores entre 100 y 999).");
     
        
-      int[][] n = new int[2][3];
+      int[][] n = new int[3][4];
 
       int fila;
       int columna;
@@ -21,7 +21,7 @@ public class Tema07Ejercicio03Bi {
       
       
       
-      for(fila = 0; fila < 2; fila++) {
+      for(fila = 0; fila < 3; fila++) {
         
         for(columna = 0; columna < 3; columna++) {
           n[fila][columna] = (int)(Math.random() * 900) + 100;
@@ -30,11 +30,11 @@ public class Tema07Ejercicio03Bi {
       }
       
       
-      for(fila = 0; fila < 2; fila++) {
+      for(fila = 0; fila < 3; fila++) {
         
         sumaFila = 0;
         
-        for(columna = 0; columna < 3; columna++) {
+        for(columna = 0; columna < 4; columna++) {
           
           System.out.printf("%5d   ", n[fila][columna]);
           sumaFila += n[fila][columna];
@@ -48,11 +48,11 @@ public class Tema07Ejercicio03Bi {
 
       sumaTotal = 0;
       
-      for(columna = 0; columna < 3; columna++) {
+      for(columna = 0; columna < 4; columna++) {
         
         sumaColumna = 0;
         
-        for(fila = 0; fila < 2; fila++) {
+        for(fila = 0; fila < 3; fila++) {
           
           sumaColumna += n[fila][columna];
         }

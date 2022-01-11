@@ -22,12 +22,14 @@ public class Tema07Ejercicio01Bi {
       int fila;
       int columna;
       
+      System.out.println("         Col 1   Col 2   Col 3   Col 4   Col 5   Col 6 ");
+      
       for(fila = 0; fila < 3; fila++) {
 
         System.out.print("Fila: " + fila);
     
         for(columna = 0; columna < 6; columna++) {
-          System.out.printf("%5d ", n[fila][columna]);
+          System.out.printf("%7d ", n[fila][columna]);
         }
         System.out.println();    
       }

@@ -45,7 +45,7 @@ public class Tema07Ejercicio04Bi {
       }
       
       
-      System.out.println("SUMA DE LAS COLUMNAS");
+      System.out.println("---------------SUMA DE LAS COLUMNAS--------------");
 
       sumaTotal = 0;
       
