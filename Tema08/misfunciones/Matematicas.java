@@ -41,12 +41,12 @@ public class Matematicas {
   }
 
   /**
-   * Calcula la media de tres números
+   * Calcula la media de tres números.
    * 
    * @param n1
    * @param n2
    * @param n3
-   * @return el resultado de la media de tres números
+   * @return el resultado de la media de tres números.
    */
   public static double media(double n1, double n2, double n3) {
 
@@ -75,7 +75,9 @@ public class Matematicas {
   }
 
   /**
-   * Se introduce una base y un exponente para saber el resultado de la potencia de ese número.
+   * Se introduce una base y un exponente para saber el resultado de la potencia
+   * de ese número.
+   * 
    * @param numero
    * @return el resultado de la potencia del número introducido.
    */
@@ -83,25 +85,42 @@ public class Matematicas {
 
     int resultado = 1;
     for (int i = 0; i < Math.abs(exponente); i++) {
-      
+
       resultado = resultado * base;
     }
 
     return (resultado);
   }
 
-  public static int voltea(int numero){
+  /**
+   * Le da la vuelta a un número entero introducido.
+   * 
+   * @param numero
+   * @return El resultado volteado del número introducido.
+   */
+  public static int voltea(int numero) {
 
+    int volteado = 0;
 
+    while (numero > 0) {
+      volteado = (volteado * 10) + (numero % 10);
+      numero = numero / 10;
+    }
+
+    return volteado;
 
   }
 
   /**
-   * 
+   * Nos dice si el número introducido es capicua o no.
    * @param numero
-   * @return
+   * @return Devuelve verdadero o falso si es capicua o no el número introducido.
    */
-  // public static boolean esCapicua(int numero) {
-  // return numero == voltea(numero);
-  // }
+  public static boolean esCapicua(int numero) {
+    return numero == voltea(numero);
+  }
+
+
+  
+
 }
