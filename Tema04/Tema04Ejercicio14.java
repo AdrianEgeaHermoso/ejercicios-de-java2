@@ -22,5 +22,7 @@ public class Tema04Ejercicio14 {
       System.out.print(" y es divisible entre 5");
     }else{
       System.out.print(" y no es divisible entre 5");}
+
+  
   }
 }
