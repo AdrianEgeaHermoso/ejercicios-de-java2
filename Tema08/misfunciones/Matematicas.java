@@ -70,7 +70,7 @@ public class Matematicas {
       resultado++;
     }
 
-    return (resultado);
+    return resultado;
 
   }
 
@@ -89,7 +89,7 @@ public class Matematicas {
       resultado = resultado * base;
     }
 
-    return (resultado);
+    return resultado;
   }
 
   /**
