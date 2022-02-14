@@ -1,73 +1,35 @@
 
 
-public class Alumno {
-    int numeroExpediente;
-    String nombre;
-    String apellidos;
-    String telefono;
-    String estudiosPrevios = "Bachillerato";
-    int anoNacimiento;
-    boolean esRepetidor;
+public class Alumno extends Persona{
+    private int numeroExpediente;
+    private String estudiosPrevios = "Bachillerato";
+    private int anoNacimiento;
+    private boolean esRepetidor;
 
-    public Alumno() {
-      
-    }
-
-    public Alumno(int numeroExpediente, String nombre, String apellidos) {
-        this.numeroExpediente = numeroExpediente;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-    }
-
-    public Alumno(int numeroExpediente, String nombre, String apellidos, String telefono, String estudiosPrevios,
-            int anoNacimiento, boolean esRepetidor) {
-        this.numeroExpediente = numeroExpediente;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.telefono = telefono;
-        this.estudiosPrevios = estudiosPrevios;
-        this.anoNacimiento = anoNacimiento;
-        this.esRepetidor = esRepetidor;
-    }
-
-    public void saluda(){
-        System.out.println("Hola soy " + this.nombre);
-
-    }
-
-
-    public void saluda(String intensidad){
-
-        String cadena = "Hola soy " + this.nombre;
-
-        switch(intensidad){
-            case "fuerte":
-                cadena = cadena.toUpperCase();
-                break;
-            case "debil":
-                cadena = cadena.toLowerCase();
-                break;
-            default:
-        }
-        System.out.println(cadena);
-
-    }
     
+    public Alumno() {
+    }
+
+    public Alumno(String nombre,int anoNacimiento) {
+        super(nombre);
+        this.anoNacimiento = anoNacimiento;
+    }
+
     public void repetidor(){
 
         if (this.esRepetidor == true){
-            System.out.println(this.nombre + " Venga otro añito mas");
+            System.out.println(this.getNombre() + " Venga otro añito mas");
         }else{
-            System.out.println(this.nombre + " Tira palante y no mires atras");
+            System.out.println(this.getNombre() + " Tira palante y no mires atras");
         }
 
     }
 
     public void salidaDelCentro(){
         if (anoNacimiento < 2003){
-            System.out.println(this.nombre + " No puede salir del centro");
+            System.out.println(this.getNombre() + " No puede salir del centro");
         }else{
-            System.out.println(this.nombre + " Puedes salir del centro");
+            System.out.println(this.getNombre() + " Puedes salir del centro");
         }
     }
 
@@ -75,17 +37,20 @@ public class Alumno {
         return 2022 - this.anoNacimiento;
     }
 
-
+    @Override
     public String getNombre(){
-        return this.nombre;
+        return this.getNombre();
     }
 
+    public String setNombre(){
+        return this.setNombre();
+    }
+
+
+
+    @Override
     public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+        return this.getTelefono();
     }
 
     public String getEstudiosPrevios() {
@@ -97,6 +62,14 @@ public class Alumno {
     }
 
 
+    public void atiende(){
+        System.out.println("Estoy atendiendo a clase");
+    }
+
     
+    public void ficha(){
+        System.out.println("Nombre: " + this.getNombre());
+        System.out.println("Estudios Previos: "+ this.estudiosPrevios);
     
+    }
 }
