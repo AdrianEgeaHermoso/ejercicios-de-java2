@@ -123,8 +123,8 @@ public class Disco {
 
     @Override
     public String toString() {
-        return "Codigo: " + codigo + " \nAutor: " + autor + " \nDuracion: " + duracion + " mins " + " \nGenero: " + genero
-                + " \nTitulo: " + titulo + "\n";
+        return "Codigo: " + codigo + " \nAutor: " + autor + " \nTitulo: " + titulo + " \nGenero: " + genero
+                + " \nDuracion: " + duracion + " mins" + "\n";
     }
 
 
