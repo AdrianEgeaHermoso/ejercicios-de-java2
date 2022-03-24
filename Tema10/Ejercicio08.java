@@ -5,6 +5,15 @@ public class Ejercicio08 {
         
         ArrayList<Carta> cartas = new ArrayList<Carta>();
 
+       for (int i = 0; i < 10; i++) {
+
+        cartas.add(new Carta("",""));
+           
+       }
+
+       System.out.println(cartas);
+
+
 
     }
 }
