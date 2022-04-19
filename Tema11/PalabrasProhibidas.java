@@ -25,9 +25,9 @@ public class PalabrasProhibidas {
 
                 if (linea != null) {
 
-                    linea = linea.replace("puton", "x");
-                    linea = linea.replace("hijode","x");
-                    linea = linea.replace("cabron","x");
+                    linea = linea.replace("puton", "xxx");
+                    linea = linea.replace("hijode","xxx");
+                    linea = linea.replace("cabron","xxx");
                     bw.write(linea + "\n");
                     //System.out.println(linea + "\n");
 
