@@ -1,0 +1,13 @@
+lunes
+5
+martes
+18
+miercoles
+6.95
+jueves
+100
+viernes
+1.50
+sabado
+40
+domingo
